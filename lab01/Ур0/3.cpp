@@ -3,11 +3,24 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "rus");
 	int a;
-	cout << "Введите число\n";
-	cin >> a;
-	int b;
-	b = a % 2;
+	int b=50;
+	cout << "Hi. Try to guess a number.\n";
+ 	do-while (!a==b)
+	{
+ 	  cin >> a;
+	  if (a==b)
+	   {
+	     cout << "YES\n";
+	   }
+	  if (a>b)
+	   {
+	     cout << "No. Less\n";
+	   }
+	  if(a<b)
+	   {
+	     cout << "No. Greater";
+	   }
+	}
 	cout << "Остаток:" << b;
 }
