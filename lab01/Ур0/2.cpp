@@ -3,5 +3,9 @@ using namespace std;
 
 int main()
 {
-	cout << "20.09.18";
+	cout << "Write your name\n";
+	char a;
+	cout << "How old are you?\n";
+	int b;
+	cout << "Hello, "<<a<<". You're "<<b<<" years old.";
 }
