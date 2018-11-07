@@ -22,5 +22,4 @@ int main()
 	     cout << "No. Greater";
 	   }
 	}
-	cout << "Остаток:" << b;
 }
