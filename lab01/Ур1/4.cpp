@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-int Check()
+int сheck()
 {
 	int x;
 	while (!(cin >> x))
 	{
 		cout << "Неверное значение";
 		cin.clear();
-		cin.ignore(10000, '\n');
+		cin.ignore(3000000, '\n');
 	}
 	return x;
 }
@@ -25,19 +25,19 @@ int main()
 		cout << "\nДобрый день!Введите два числа\n";
 		cin >> a;
 		cin >> b;
-		a = Check();
-		b = Check();
+		a = сheck();
+		b = сheck();
 		cout << "Вы ввели числа " << a << " и ";
 		cout << b << "\n";
-		char L = 'F';
-		while (L=='F')
+		bool L = false;
+		while (L==false)
 		{
 		   cout << "Что вы хотите сделать?\n1.+\n2.-\n3.*\n4./\n";
 		   int t;
 		   cin >> t;
 		   if (t==1 || t==2 || t==3 ||t==4)
 		   {
-			   L='T'
+			   L=true;
 		   }  
 		   else
 		   {
@@ -63,14 +63,14 @@ int main()
 			c = a / b;
 		}
 		cout << "Результат:" << c;
-		L = 'F';
-		while (L == 'F')
+		L = false;
+		while (L == false)
 		{ 
 			cout << "\nХотите продолжить? Y/N\n";
 		    cin >> m;
 			if (m == Y || m == N)
 			{
-				L = 'T'
+				L = true;
 			}
 			else
 			{
@@ -79,4 +79,5 @@ int main()
 		}
 
 	}
+	 return 0;
 }
