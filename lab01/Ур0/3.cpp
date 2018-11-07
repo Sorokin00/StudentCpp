@@ -6,7 +6,7 @@ int main()
 	int a;
 	int b=50;
 	cout << "Hi. Try to guess a number.\n";
- 	do-while (!a==b)
+ 	while (!a==b)
 	{
  	  cin >> a;
 	  if (a==b)
