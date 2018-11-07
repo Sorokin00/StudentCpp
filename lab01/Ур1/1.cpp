@@ -40,4 +40,5 @@ int main()
 		cout << "\nХотите повторить? Y/N";
 		cin >> m;
 	}
+	 return 0;
 }
