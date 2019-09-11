@@ -15,7 +15,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    bool error = 0, end = 0;
     int  operations_size = 0, chisla_size = 0, sin_size = 0, cos_size = 0, tg_size = 0, ctg_size = 0;
     double *chisla = new double[1];
     double *operations = new double[1];
@@ -27,7 +26,6 @@ public:
     QString number=nullptr, last=nullptr, last_type=nullptr, save=nullptr, save_button=nullptr;
     bool op = 0, pow = 0, trg = 1;
     int dot = 0, ctrl = 0;
-    //void keyPressEvent(QKeyEvent *event);
 
 private:
     Ui::MainWindow *ui;

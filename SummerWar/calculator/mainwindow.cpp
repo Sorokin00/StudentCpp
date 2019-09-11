@@ -33,6 +33,12 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete [] chisla;
+    delete [] operations;
+    delete [] sin_array;
+    delete [] cos_array;
+    delete [] tg_array;
+    delete [] ctg_array;
 }
 
 void push(double *&old_array, int &size,  double value)
@@ -445,7 +451,7 @@ void MainWindow::on_pushButton_pow_clicked()
     if (op==1)
     {
         op=0;
-        dot = 0;
+        dot=0;
         trg=1;
         pow=1;
         numbers_buffer = number.toDouble();
@@ -454,6 +460,6 @@ void MainWindow::on_pushButton_pow_clicked()
         number=nullptr;
         push(operations, operations_size, 5);
         last_type="pow";
-        last=5;
+        last=nullptr;
     }
 }
